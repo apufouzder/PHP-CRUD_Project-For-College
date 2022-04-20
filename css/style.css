@@ -1,0 +1,177 @@
+/* Custom Class Style */
+body p,h3,h4,a{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,h2,h5,h6{
+    font-family: 'Bebas Neue', cursive;
+    color: #363958;
+}
+
+.titles{
+    font-weight: 600;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.custom-btn {
+    background: linear-gradient(#a0bb37, #8faa23);
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+}
+.custom-btn:hover{
+    color: white;
+}
+
+.custom-btn img{
+    width: 23px;
+}
+
+/* Navbar Custom CSS Start*/
+.custom-nav-item{
+    padding: 10px 12px;
+}
+
+
+/* Hero Section Custom CSS Start */
+.hero-section{
+    background-color: #FFFBF0;
+}
+.custom-hero-img img{
+    width: 100%;
+}
+.custom-logo-image img{
+    width: 72%;
+}
+.custom-hero-h1{
+    font-size: 5em;
+}
+.color-highlight{
+    color: #FABE4C;
+}
+
+@media (max-width:768px){
+    .custom-logo-image img{
+        width: 240px;
+    }
+}
+@media (max-width:992px){
+    .custom-logo-image img{
+        width: 240px;
+    }
+}
+
+.update-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 75%;
+}
+
+/* First Product Section Custom CSS Start */
+
+.custom-card-imgage {
+    padding: 5%;
+    
+}
+.custom-main-image {
+    background: #F1F1F1;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+
+.custom-card {
+    border: none;
+    box-shadow: 0px 10px 30px #cacaca75;
+    border-radius: 4%;
+    padding: 2%;
+}
+.custom-card-footer{
+    border: none;
+    background-color: white;
+}
+
+@media (max-width:768px){
+    .custom-manjacket{
+        text-align: center;
+    }
+}
+@media (max-width:992px){
+    .custom-manjacket{
+        text-align: center;
+    }
+}
+
+
+/* Contact Section Custom CSS Start */
+.custom-ads-image img{
+    width: 100%;
+}
+.custom-icon{
+    width: 100px;
+}
+
+.custom-contact-left-info {
+    background: #bbbbbb;
+}
+
+.custom-block {
+    background: white;
+    padding: 12px 0;
+    box-shadow: 0px 10px 30px #cacaca75;
+    border-radius: 10px;
+}
+
+@media (max-width:768px){
+    .custom-block{
+        margin: auto;
+        width: 68%;
+        text-align: center;
+    }
+    .custom-image-icon{
+        margin: auto;
+    }
+    .update-img-div{
+        display: block;
+    }
+    .custom-card-img{
+        margin-top: 6px;
+    }
+    
+}
+@media (max-width:992px){
+    .custom-block{
+        margin: auto;
+    }
+    .custom-btn{
+        font-size: 0.8em;
+        padding: 9px;
+    }
+    
+}
+
+/* Big Sell Section Custom CSS Start */
+
+.custom-big-sell-image img{
+    width: 100%;
+}
+
+.custom-info{
+    margin: auto;
+    padding: 0px 1px 0px 10%;
+    text-align: center;
+}
+
+
+/* Footer Section Custom CSS Start*/
+.custom-footer{
+    background: #f3f3f3;
+    padding: 5px;
+}

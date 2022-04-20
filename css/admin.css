@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.containers {
+  position: relative;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  
+  transition: 0.5s;
+  overflow: hidden;
+
+background: radial-gradient(circle, rgba(244,195,216,0.9612219887955182) 2%, rgba(209,226,246,1) 100%);}
+
+.navigation.active {
+  width: 75px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+.navigation ul li:hover {
+  background: linear-gradient(45deg, #d4f0fa, #e8e0ba59);
+  border-radius: 10px 0 0px 10px;
+}
+.navigation ul li:nth-child(1):hover {
+  background: transparent;
+}
+
+.navigation ul li a {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  display: flex;
+  color: #6c757d;
+font-weight: 500;font-size: 18px;}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 5px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+/* New Style */
+td.img-td {width: 50px;}
+
+td.img-td img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom-card-img{
+  width: 70px;
+}
+.custom-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Main section */
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  height: 100vh;
+  
+  transition: 0.5s;
+
+background: radial-gradient(circle, rgba(244,195,216,0.9612219887955182) 2%, rgba(209,226,246,1) 100%);}
+
+.main.active {
+  width: calc(100% - 60px);
+  left: 75px;
+}
+
+.main .topBar {
+  width: 100%;
+  /* background: #fff; */
+  height: 60px;
+  padding: 0px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.toggle::before {
+  content: "\f0c9";
+  position: absolute;
+  font-family: fontAwesome;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: center;
+  color: #111;
+}
+
+.search {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.search label {
+  position: relative;
+  width: 100%;
+}
+
+.search label input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 20px;
+  padding-left: 35px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search label .fa {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+}
+
+.user {
+  position: relative;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* details */
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.details .recentOrders {
+  position: relative;
+  /* min-height: 530px; */
+  /* background: #fff; */
+  padding: 20px;
+  line-height: 1.8;
+  box-shadow: 0px 2px 12px 1px #ffffff;
+border-radius: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardHeader h4 {
+  font-weight: 600;
+background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;}
+.cardHeader .fa {
+  font-size: 21px;
+  position: relative;
+  top: 2px;
+}
+.btn {
+  position: relative;
+  padding: 5px 10px;
+  background: #971ab3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.details table thead td {
+  font-weight: 600;
+}
+
+.details .recentOrders table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.details .recentOrders table thead tr td:last-child,
+.details .recentOrders table tbody tr td:last-child {
+  text-align: right;
+}
+
+.details .recentOrders table thead tr td:nth-child(2),
+.details .recentOrders table tbody tr td:nth-child(2) {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.details .recentOrders table thead tr td:nth-child(3),
+.details .recentOrders table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+
+.details .recentOrders table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOrders table tr td {
+  padding: 9px 5px;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.edit {
+  background: #14e701;
+}
+.delete {
+  background: #f54600;
+}
+
+.details .recentCustomers {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 12px 1px #e5e5e5;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation.active {
+    left: 0;
+    width: 300px;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardHeader h2,
+  .cardHeader1 h2 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .details .recentOrders {
+    overflow-x: auto;
+  }
+  .details .recentOrders table {
+    width: 600px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle.active {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    left: initial;
+  }
+  .toggle.active::before {
+    color: #fff;
+  }
+  .main,
+  .main.active {
+    width: 100%;
+    left: 0;
+  }
+}
